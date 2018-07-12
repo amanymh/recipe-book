@@ -1,0 +1,12 @@
+<p>
+  shoping-list works!
+</p>
+<app-shopping-edit></app-shopping-edit>
+<hr>
+<ul class="list-group" >
+  <li class="list-group-item"
+   style="cursor:pointer"
+  *ngFor="let ingredient of ingregients ; let i = index"
+  (click)="onEditing(i)">
+  {{ingredient.name}} ({{ingredient.amount}})</li>
+</ul>

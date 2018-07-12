@@ -1,0 +1,17 @@
+<p>
+    recipe-item works!
+  </p>
+<a  [routerLink]="[index]"
+     routerLinkActive="active"
+ class="list-group-item clearfix" style="display:flex;cursor:pointer">
+
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+    <h6 class="list-group-item-text"> {{recipe.description}}</h6>
+  </div>
+  <span class="pull-right">
+    <img [src]="recipe.imagePath"
+    alt="" style="max-height:50px; margin-left: 42px;" class="img-responsive">
+  </span>
+
+</a>
